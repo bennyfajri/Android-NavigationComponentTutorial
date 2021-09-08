@@ -9,27 +9,17 @@
         android:id="@+id/firstFragment"
         android:name="com.example.navigationcomponenttutorial.FirstFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first" >
-        <action
-            android:id="@+id/navigateToSecond"
-            app:destination="@id/secondFragment"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
-    </fragment>
+        tools:layout="@layout/fragment_first" />
 
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.navigationcomponenttutorial.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" >
-        <action
-            android:id="@+id/navigateToFirst"
-            app:destination="@id/firstFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
-        <argument
-            android:name="number"
-            app:argType="integer"
-            android:defaultValue="2" />
+        tools:layout="@layout/fragment_second" >/>
     </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.navigationcomponenttutorial.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
 </navigation>
