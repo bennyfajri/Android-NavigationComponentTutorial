@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
-    tools:context=".SecondFragment">
+    android:background="@color/purple_200"
+    tools:context=".ThirdFragment">
 
     <TextView
-        android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/second_fragment"
+        android:text="Third Fragment"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
