@@ -17,7 +17,10 @@ class FirstFragment : Fragment() {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_first, container, false)
 
-        view.tv1.setOnClickListener {
+        view.btnNext.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.navigateToThird)
+        }
+        view.btnPrev.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigateToSecond)
         }
 

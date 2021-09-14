@@ -17,7 +17,7 @@ class SecondFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_second, container, false)
 
-        view.tv2.setOnClickListener {
+        view.btnBackSecond.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.navigateToFirst)
         }
         return view
