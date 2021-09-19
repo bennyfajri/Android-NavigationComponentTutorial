@@ -57,5 +57,17 @@
         <argument
             android:name="currentUser"
             app:argType="com.example.navigationcomponenttutorial.model.User" />
+        <action
+            android:id="@+id/action_resultFragment_to_bottomNavigationSheet"
+            app:destination="@id/bottomNavigationSheet" />
     </fragment>
+    <dialog
+        android:id="@+id/bottomNavigationSheet"
+        android:name="com.example.navigationcomponenttutorial.BottomNavigationSheet"
+        android:label="fragment_bottom_navigation_sheet"
+        tools:layout="@layout/fragment_bottom_navigation_sheet" >
+        <action
+            android:id="@+id/action_bottomNavigationSheet_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </dialog>
 </navigation>
